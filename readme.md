@@ -86,7 +86,7 @@ Creates starting points based on a trace configuration.
 | --------- | ------- | ----------- |
 in_utility_network|Input Utility Network|<p>The utility network that will be used to trace.</p>
 trace_config|Trace Configuration Name|<p>The utility network trace configuration used to define the trace parameters.</p>
-starting_class|Starting Points or Line Layer|<p><p>The utility network starting points layer.</p><p>A Line layer can also be used, the center point of the line will be used as the starting point.</p></p>
+starting_class|Starting Points or UN Controlled Layer|<p><p>The utility network starting points layer.</p><p>A UN controlled ayer can also be used, the center point of the line/polygon will be used as the starting point.  For devices, a default terminal of 1 is used.</p></p>
 group_by_field|Group By Field|<p>A field with a value to group the result locations for the batch trace. Select ObjectID or Global ID to make each set of results unique.</p>
 expression|Expression|<p>The simple calculation expression used to limit the starting points used in a trace.</p>
 results_trace_config|Result Trace Config|<p>The trace configuration to use in the result. If not provided, the trace configuration used to find the results will be used.</p>
@@ -372,6 +372,8 @@ execute|Create trace configurations|<p>Option to immediately add the configurati
 output_script|Save python calls to script|<p>Create a python script with the call to arcpy.un.AddTraceConfiguration.</p>
 created_names|Created Names|<p>The unique names created by AddTraceConfiguration.</p>
 ---
+
+
 
 ## Instructions
 
